@@ -4,9 +4,9 @@
 * Vision UI Free Chakra - v1.0.0
 =========================================================
 
-* Product Page: https://www.creative-tim.com/product/vision-ui-free-chakra
+* Product Page: https://www.creative-tim.com/product/vision-ui-dashboard-chakra
 * Copyright 2021 Creative Tim (https://www.creative-tim.com/)
-* Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-chakra/blob/master LICENSE.md)
+* Licensed under MIT (https://github.com/creativetimofficial/vision-ui-dashboard-chakra/blob/master LICENSE.md)
 
 * Design and Coded by Simmmple & Creative Tim
 
