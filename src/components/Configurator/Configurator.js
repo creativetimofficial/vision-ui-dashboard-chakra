@@ -149,7 +149,7 @@ export default function Configurator(props) {
                     </Button>
                   </Link>
                   <Link
-                    href='https://demos.creative-tim.com/docs-vision-ui-dashboard-chakra/'
+                    href='https://demos.creative-tim.com/docs-vision-ui-dashboard-chakra?ref=creativetim-vudc'
                     w='100%'>
                     <Button
                       w='100%'

@@ -48,7 +48,7 @@ export function SidebarHelp(props) {
       </Text>
       <Link
         w='100%'
-        href='https://demos.creative-tim.com/docs-vision-ui-dashboard-chakra/'>
+        href='https://demos.creative-tim.com/docs-vision-ui-dashboard-chakra/?ref=creativetim-vudc'>
         <Button
           fontSize='10px'
           fontWeight='bold'
