@@ -1,0 +1,19 @@
+/*!
+
+      =========================================================
+      * Vision UI Free Chakra - v1.0.0
+      =========================================================
+      
+      * Product Page: https://www.creative-tim.com/product/vision-ui-free-chakra
+      * Copyright 2021 Creative Tim (https://www.creative-tim.com/)
+      * Licensed under MIT (https://github.com/creativetimofficial/vision-ui-free-chakra/blob/master LICENSE.md)
+      
+      * Design and Coded by Simmmple & Creative Tim
+      
+      =========================================================
+      
+      * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+      
+      */
+.CircularProgressbar{width:100%;vertical-align:middle}.CircularProgressbar .CircularProgressbar-path{stroke:#3e98c7;stroke-linecap:round;transition:stroke-dashoffset .5s ease 0s}.CircularProgressbar .CircularProgressbar-trail{stroke:#d6d6d6;stroke-linecap:round}.CircularProgressbar .CircularProgressbar-text{fill:#3e98c7;font-size:20px;dominant-baseline:middle;text-anchor:middle}.CircularProgressbar .CircularProgressbar-background{fill:#d6d6d6}.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-background{fill:#3e98c7}.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-text{fill:#fff}.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-path{stroke:#fff}.CircularProgressbar.CircularProgressbar-inverted .CircularProgressbar-trail{stroke:transparent}
+/*# sourceMappingURL=2.6c0f60ba.chunk.css.map */

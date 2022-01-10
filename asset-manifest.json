@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.js": "/vision-ui-dashboard-chakra/static/js/main.40be2d58.chunk.js",
+    "main.js.map": "/vision-ui-dashboard-chakra/static/js/main.40be2d58.chunk.js.map",
+    "runtime-main.js": "/vision-ui-dashboard-chakra/static/js/runtime-main.01664339.js",
+    "runtime-main.js.map": "/vision-ui-dashboard-chakra/static/js/runtime-main.01664339.js.map",
+    "static/css/2.6c0f60ba.chunk.css": "/vision-ui-dashboard-chakra/static/css/2.6c0f60ba.chunk.css",
+    "static/js/2.bc58e5bb.chunk.js": "/vision-ui-dashboard-chakra/static/js/2.bc58e5bb.chunk.js",
+    "static/js/2.bc58e5bb.chunk.js.map": "/vision-ui-dashboard-chakra/static/js/2.bc58e5bb.chunk.js.map",
+    "index.html": "/vision-ui-dashboard-chakra/index.html",
+    "static/css/2.6c0f60ba.chunk.css.map": "/vision-ui-dashboard-chakra/static/css/2.6c0f60ba.chunk.css.map",
+    "static/js/2.bc58e5bb.chunk.js.LICENSE.txt": "/vision-ui-dashboard-chakra/static/js/2.bc58e5bb.chunk.js.LICENSE.txt",
+    "static/js/main.40be2d58.chunk.js.LICENSE.txt": "/vision-ui-dashboard-chakra/static/js/main.40be2d58.chunk.js.LICENSE.txt",
+    "static/media/ProjectImage1.bed72a00.png": "/vision-ui-dashboard-chakra/static/media/ProjectImage1.bed72a00.png",
+    "static/media/ProjectImage2.e33d8e16.png": "/vision-ui-dashboard-chakra/static/media/ProjectImage2.e33d8e16.png",
+    "static/media/ProjectImage3.612b1c42.png": "/vision-ui-dashboard-chakra/static/media/ProjectImage3.612b1c42.png",
+    "static/media/SidebarHelpImage.40ef5912.png": "/vision-ui-dashboard-chakra/static/media/SidebarHelpImage.40ef5912.png",
+    "static/media/avatar10.1683e1c0.png": "/vision-ui-dashboard-chakra/static/media/avatar10.1683e1c0.png",
+    "static/media/avatar7.00e8f4f0.png": "/vision-ui-dashboard-chakra/static/media/avatar7.00e8f4f0.png",
+    "static/media/avatar8.9719f145.png": "/vision-ui-dashboard-chakra/static/media/avatar8.9719f145.png",
+    "static/media/avatar9.2db98189.png": "/vision-ui-dashboard-chakra/static/media/avatar9.2db98189.png",
+    "static/media/background-body-admin.9a5703c1.png": "/vision-ui-dashboard-chakra/static/media/background-body-admin.9a5703c1.png",
+    "static/media/bgProfile.d734b546.png": "/vision-ui-dashboard-chakra/static/media/bgProfile.d734b546.png",
+    "static/media/billing-background-card.12071e80.png": "/vision-ui-dashboard-chakra/static/media/billing-background-card.12071e80.png",
+    "static/media/cardimgfree.43727088.png": "/vision-ui-dashboard-chakra/static/media/cardimgfree.43727088.png",
+    "static/media/signInImage.54090d1d.png": "/vision-ui-dashboard-chakra/static/media/signInImage.54090d1d.png",
+    "static/media/signUpImage.ce32c576.png": "/vision-ui-dashboard-chakra/static/media/signUpImage.ce32c576.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.01664339.js",
+    "static/css/2.6c0f60ba.chunk.css",
+    "static/js/2.bc58e5bb.chunk.js",
+    "static/js/main.40be2d58.chunk.js"
+  ]
+}
