@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/vision-ui-dashboard-chakra/static/js/main.40be2d58.chunk.js",
-    "main.js.map": "/vision-ui-dashboard-chakra/static/js/main.40be2d58.chunk.js.map",
+    "main.js": "/vision-ui-dashboard-chakra/static/js/main.fc365c08.chunk.js",
+    "main.js.map": "/vision-ui-dashboard-chakra/static/js/main.fc365c08.chunk.js.map",
     "runtime-main.js": "/vision-ui-dashboard-chakra/static/js/runtime-main.01664339.js",
     "runtime-main.js.map": "/vision-ui-dashboard-chakra/static/js/runtime-main.01664339.js.map",
     "static/css/2.6c0f60ba.chunk.css": "/vision-ui-dashboard-chakra/static/css/2.6c0f60ba.chunk.css",
@@ -10,7 +10,7 @@
     "index.html": "/vision-ui-dashboard-chakra/index.html",
     "static/css/2.6c0f60ba.chunk.css.map": "/vision-ui-dashboard-chakra/static/css/2.6c0f60ba.chunk.css.map",
     "static/js/2.bc58e5bb.chunk.js.LICENSE.txt": "/vision-ui-dashboard-chakra/static/js/2.bc58e5bb.chunk.js.LICENSE.txt",
-    "static/js/main.40be2d58.chunk.js.LICENSE.txt": "/vision-ui-dashboard-chakra/static/js/main.40be2d58.chunk.js.LICENSE.txt",
+    "static/js/main.fc365c08.chunk.js.LICENSE.txt": "/vision-ui-dashboard-chakra/static/js/main.fc365c08.chunk.js.LICENSE.txt",
     "static/media/ProjectImage1.bed72a00.png": "/vision-ui-dashboard-chakra/static/media/ProjectImage1.bed72a00.png",
     "static/media/ProjectImage2.e33d8e16.png": "/vision-ui-dashboard-chakra/static/media/ProjectImage2.e33d8e16.png",
     "static/media/ProjectImage3.612b1c42.png": "/vision-ui-dashboard-chakra/static/media/ProjectImage3.612b1c42.png",
@@ -30,6 +30,6 @@
     "static/js/runtime-main.01664339.js",
     "static/css/2.6c0f60ba.chunk.css",
     "static/js/2.bc58e5bb.chunk.js",
-    "static/js/main.40be2d58.chunk.js"
+    "static/js/main.fc365c08.chunk.js"
   ]
 }
