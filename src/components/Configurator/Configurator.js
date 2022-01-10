@@ -73,41 +73,6 @@ export default function Configurator(props) {
           </DrawerHeader>
           <DrawerBody w='340px' ps='24px' pe='40px'>
             <Flex flexDirection='column'>
-              {/* <Box>
-                <Text fontSize='md' fontWeight='600'>
-                  Sidenav Type
-                </Text>
-                <Text fontSize='sm' mb='16px'>
-                  Choose between 2 different sidenav types.
-                </Text>
-                <Flex>
-                  <Button
-                    w='50%'
-                    p='8px 32px'
-                    me='8px'
-                    colorScheme='teal'
-                    borderColor='teal.300'
-                    color='teal.300'
-                    variant='outline'
-                    fontSize='xs'
-                    onClick={props.onTransparent}>
-                    Transparent
-                  </Button>
-                  <Button
-                    type='submit'
-                    bg='teal.300'
-                    w='50%'
-                    p='8px 32px'
-                    mb={5}
-                    _hover='teal.300'
-                    color='white'
-                    fontSize='xs'
-                    onClick={props.onOpaque}>
-                    Opaque
-                  </Button>
-                </Flex>
-              </Box> */}
-
               <Box
                 display={fixedDisplay}
                 justifyContent='space-between '

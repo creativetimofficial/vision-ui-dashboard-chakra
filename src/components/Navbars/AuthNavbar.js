@@ -74,7 +74,6 @@ export default function AuthNavbar(props) {
       justifyContent='center'
       alignItems='center'
       color={mainText}>
-      {/* <CreativeTimLogo w='32px' h='32px' me='10px' /> */}
       <Box
         bg='linear-gradient(97.89deg, #FFFFFF 70.67%, rgba(117, 122, 140, 0) 108.55%)'
         bgClip='text'>
