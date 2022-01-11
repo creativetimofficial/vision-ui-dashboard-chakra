@@ -49,7 +49,7 @@ export default function Footer(props) {
             : "Made with ❤️ by "}
         </Text>
         <Link
-          href='https://www.creative-tim.com?ref=creativetim-vudc'
+          href='https://www.simmmple.com?ref=creativetim-vudc'
           target='_blank'>
           {document.documentElement.dir === "rtl"
             ? " توقيت الإبداعية"
@@ -57,9 +57,9 @@ export default function Footer(props) {
         </Link>
         &
         <Link
-          href='https://www.simmmple.com?ref=creativetim-vudc'
+          href='https://www.creative-tim.com?ref=creativetim-vudc'
           target='_blank'>
-          {document.documentElement.dir === "rtl" ? "سيممبل " : " Simmmple"}
+          {document.documentElement.dir === "rtl" ? "سيممبل " : " Creative Tim"}
         </Link>
         {document.documentElement.dir === "rtl"
           ? "للحصول على ويب أفضل"
@@ -74,7 +74,7 @@ export default function Footer(props) {
           <Link
             color='white'
             fontSize='sm'
-            href='https://www.creative-tim.com?ref=creativetim-vudc'>
+            href='https://www.simmmple.com?ref=creativetim-vudc'>
             {document.documentElement.dir === "rtl"
               ? "توقيت الإبداعية"
               : "Simmmple"}
@@ -88,8 +88,8 @@ export default function Footer(props) {
           <Link
             color='white'
             fontSize='sm'
-            href='https://www.simmmple.com?ref=creativetim-vudc'>
-            {document.documentElement.dir === "rtl" ? "سيممبل" : "Simmmple"}
+            href='https://www.creative-tim.com?ref=creativetim-vudc'>
+            {document.documentElement.dir === "rtl" ? "سيممبل" : "Creative Tim"}
           </Link>
         </ListItem>
         <ListItem
