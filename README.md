@@ -232,7 +232,7 @@ If you have questions or need help integrating the product please [contact us](h
 
 ## Licensing
 
-- Copyright 2021 [Creative Tim](https://www.creative-tim.com?ref=readme-vudchakra)
+- Copyright 2022 [Creative Tim](https://www.creative-tim.com?ref=readme-vudchakra)
 
 - Creative Tim [License](https://www.creative-tim.com/license?ref=readme-vudchakra)
 
