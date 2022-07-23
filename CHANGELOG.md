@@ -1,11 +1,11 @@
 # Changelog
-## [1.0.3] 2022-07-24
+## [1.0.2] 2022-07-24
 
-### Update v1.0.3
+### Update v1.0.2
 
 - We used the Chakra UI Circular Progress instead of the plugins since they were deprecated. The plugins are still used in previous versions!
 
-## [1.0.2] 2022-05-16
+## [1.0.1] 2022-05-16
 
 ### Update v1.0.1
 
