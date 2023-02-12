@@ -76,7 +76,7 @@ export default function Dashboard() {
 						<Flex flexDirection='row' align='center' justify='center' w='100%'>
 							<Stat me='auto'>
 								<StatLabel fontSize='sm' color='gray.400' fontWeight='bold' pb='2px'>
-									Today's Money
+									Emergency Contact 
 								</StatLabel>
 								<Flex>
 									<StatNumber fontSize='lg' color='#fff'>
