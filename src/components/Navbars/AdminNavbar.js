@@ -86,21 +86,21 @@ export default function AdminNavbar(props) {
       borderColor={navbarBorder}
       filter={navbarFilter}
       backdropFilter={navbarBackdrop}
-      borderWidth='1.5px'
-      borderStyle='solid'
-      transitionDelay='0s, 0s, 0s, 0s'
-      transitionDuration=' 0.25s, 0.25s, 0.25s, 0s'
-      transition-property='box-shadow, background-color, filter, border'
-      transitionTimingFunction='linear, linear, linear, linear'
+      borderWidth="1.5px"
+      borderStyle="solid"
+      transitionDelay="0s, 0s, 0s, 0s"
+      transitionDuration=" 0.25s, 0.25s, 0.25s, 0s"
+      transition-property="box-shadow, background-color, filter, border"
+      transitionTimingFunction="linear, linear, linear, linear"
       alignItems={{ xl: "center" }}
-      borderRadius='16px'
-      display='flex'
-      minH='75px'
+      borderRadius="16px"
+      display="flex"
+      minH="75px"
       justifyContent={{ xl: "center" }}
-      lineHeight='25.6px'
-      mx='auto'
+      lineHeight="25.6px"
+      mx="auto"
       mt={secondaryMargin}
-      pb='8px'
+      pb="8px"
       left={document.documentElement.dir === "rtl" ? "30px" : ""}
       right={document.documentElement.dir === "rtl" ? "" : "30px"}
       px={{
@@ -110,26 +110,28 @@ export default function AdminNavbar(props) {
       ps={{
         xl: "12px",
       }}
-      pt='8px'
-      top='18px'
-      w={{ sm: "calc(100vw - 60px)", xl: "calc(100vw - 75px - 275px)" }}>
+      pt="8px"
+      top="18px"
+      w={{ sm: "calc(100vw - 60px)", xl: "calc(100vw - 75px - 275px)" }}
+    >
       <Flex
-        w='100%'
+        w="100%"
         flexDirection={{
           sm: "column",
           md: "row",
         }}
-        alignItems={{ xl: "center" }}>
+        alignItems={{ xl: "center" }}
+      >
         <Box mb={{ sm: "8px", md: "0px" }}>
           <Breadcrumb>
-            <BreadcrumbItem color='#A0AEC0'>
-              <BreadcrumbLink href='#' color='#A0AEC0'>
+            <BreadcrumbItem color="#A0AEC0">
+              <BreadcrumbLink href="#" color="#A0AEC0">
                 Pages
               </BreadcrumbLink>
             </BreadcrumbItem>
 
             <BreadcrumbItem color={mainText}>
-              <BreadcrumbLink href='#' color={mainText}>
+              <BreadcrumbLink href="#" color={mainText}>
                 {brandText}
               </BreadcrumbLink>
             </BreadcrumbItem>
@@ -137,10 +139,10 @@ export default function AdminNavbar(props) {
           {/* Here we create navbar brand, based on route name */}
           <Link
             color={mainText}
-            href='#'
-            bg='inherit'
-            borderRadius='inherit'
-            fontWeight='bold'
+            href="#"
+            bg="inherit"
+            borderRadius="inherit"
+            fontWeight="bold"
             _hover={{ color: { mainText } }}
             _active={{
               bg: "inherit",
@@ -149,11 +151,12 @@ export default function AdminNavbar(props) {
             }}
             _focus={{
               boxShadow: "none",
-            }}>
+            }}
+          >
             {brandText}
           </Link>
         </Box>
-        <Box ms='auto' w={{ sm: "100%", md: "unset" }}>
+        <Box ms="auto" w={{ sm: "100%", md: "unset" }}>
           <AdminNavbarLinks
             onOpen={props.onOpen}
             logoText={props.logoText}
