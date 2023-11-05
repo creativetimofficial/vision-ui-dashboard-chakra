@@ -29,7 +29,7 @@ import {
 } from "react-icons/fa";
 import { SiDropbox } from "react-icons/si";
 
-export const dashboardTableData = [
+/*export const dashboardTableData = [
   {
     logo: AdobexdLogo,
     name: "Chakra Soft UI Version",
@@ -72,9 +72,9 @@ export const dashboardTableData = [
     budget: "$7,600",
     progression: 40,
   },
-];
+];*/
 
-export const timelineData = [
+/*export const timelineData = [
   {
     logo: FaBell,
     title: "$2400, Design changes",
@@ -110,8 +110,9 @@ export const timelineData = [
     title: "New order #9851258",
     date: "18 DEC 4:41 PM",
   },
-];
-export const rtlDashboardTableData = [
+];*/
+
+/*export const rtlDashboardTableData = [
   {
     logo: AdobexdLogo,
     name: "نسخة Vision UI",
@@ -192,7 +193,7 @@ export const rtlTimelineData = [
     title: "طلب جديد #9851258",
     date: "18 DEC 4:41 PM",
   },
-];
+];*/
 
 export const tablesTableData = [
   {

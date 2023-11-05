@@ -169,12 +169,12 @@ export const lineChartOptionsDashboard = {
   colors: ["#2CD9FF", "#582CFF"],
 };
 
-export const lineChartDataProfile1 = [
+/*export const lineChartDataProfile1 = [
   {
     name: "Mobile apps",
     data: [100, 250, 300, 220, 500, 250, 300, 230, 300, 350, 250, 400],
   },
-];
+];*/
 
 export const lineChartOptionsProfile1 = {
   chart: {
