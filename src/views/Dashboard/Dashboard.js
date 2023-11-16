@@ -235,7 +235,7 @@ export default function Dashboard() {
         <Card
           p="0px"
           gridArea={{ md: "1 / 1 / 2 / 3", "2xl": "auto" }}
-          bgGradient="linear(to-br, black, blue.800, black)"
+          bg="#0F122D"
           bgSize="cover"
           bgPosition="30%"
         >
@@ -301,14 +301,11 @@ export default function Dashboard() {
           </CardBody>
         </Card>
         {/* Satisfaction Rate */}
-        <Card
-          gridArea={{ md: "2 / 1 / 3 / 2", "2xl": "auto" }}
-          bgGradient="linear(to-br, black, blue.800, black)"
-        >
+        <Card gridArea={{ md: "2 / 1 / 3 / 2", "2xl": "auto" }} bg="#0F122D">
           <CardHeader mb="24px">
             <Flex direction="column">
               <Text color="#fff" fontSize="lg" fontWeight="bold" mb="4px">
-                Satisfaction Rate
+                Twitter Spaces
               </Text>
               <Text color="gray.400" fontSize="sm">
                 From all projects
@@ -339,44 +336,48 @@ export default function Dashboard() {
                 </CircularProgressLabel>
               </CircularProgress>
             </Box>
-            <Stack
-              direction="row"
-              spacing={{ sm: "42px", md: "68px" }}
+            {/* <Flex
+              direction="column"
               justify="center"
-              maxW={{ sm: "270px", md: "300px", lg: "100%" }}
+              align="center"
+              maxW={{ lg: "100%" }}
               mx={{ sm: "auto", md: "0px" }}
-              p="18px 22px"
+              p="10px 12px"
               bg="linear-gradient(126.97deg, rgb(6, 11, 40) 28.26%, rgba(10, 14, 35) 91.2%)"
               borderRadius="20px"
               position="absolute"
               bottom="5%"
             >
-              <Text fontSize="xs" color="gray.400">
-                0%
-              </Text>
-              <Flex direction="column" align="center" minW="80px">
-                <Text color="#fff" fontSize="28px" fontWeight="bold">
-                  95%
-                </Text>
+              <Stack
+                direction="row"
+                spacing={{ sm: "42px", md: "68px" }}
+                justify="center"
+                maxW={{ sm: "270px", md: "300px" }}
+              >
                 <Text fontSize="xs" color="gray.400">
-                  Based on likes
+                  0%
                 </Text>
-              </Flex>
-              <Text fontSize="xs" color="gray.400">
-                100%
-              </Text>
-            </Stack>
+                <Flex direction="column" align="center" minW="80px">
+                  <Text color="#fff" fontSize="18px" fontWeight="bold">
+                    95%
+                  </Text>
+                  <Text fontSize="xs" color="gray.400">
+                    Based on likes
+                  </Text>
+                </Flex>
+                <Text fontSize="xs" color="gray.400">
+                  100%
+                </Text>
+              </Stack>
+            </Flex> */}
           </Flex>
         </Card>
         {/* Referral Tracking */}
-        <Card
-          gridArea={{ md: "2 / 2 / 3 / 3", "2xl": "auto" }}
-          bgGradient="linear(to-br, black, blue.800, black)"
-        >
+        <Card gridArea={{ md: "2 / 2 / 3 / 3", "2xl": "auto" }} bg="#0F122D">
           <Flex direction="column">
             <Flex justify="space-between" align="center" mb="40px">
               <Text color="#fff" fontSize="lg" fontWeight="bold">
-                Referral Tracking
+                DM Tracking
               </Text>
               <Button
                 borderRadius="12px"
@@ -472,14 +473,11 @@ export default function Dashboard() {
         mb="24px"
       >
         {/* Sales Overview */}
-        <Card
-          p="28px 0px 0px 0px"
-          bgGradient="linear(to-br, black, blue.800, black)"
-        >
+        <Card p="28px 0px 0px 0px" bg="#0F122D">
           <CardHeader mb="20px" ps="22px">
             <Flex direction="column" alignSelf="flex-start">
               <Text fontSize="lg" color="#fff" fontWeight="bold" mb="6px">
-                Sales Overview
+                Follower Growth Chart
               </Text>
               <Text fontSize="md" fontWeight="medium" color="gray.400">
                 <Text as="span" color="green.400" fontWeight="bold">
@@ -497,7 +495,7 @@ export default function Dashboard() {
           </Box>
         </Card>
         {/* Active Users */}
-        <Card p="16px" bgGradient="linear(to-br, black, blue.800, black)">
+        <Card p="16px" bg="#0F122D">
           <CardBody>
             <Flex direction="column" w="100%">
               <Box
@@ -669,15 +667,11 @@ export default function Dashboard() {
         gap="24px"
       >
         {/* Projects */}
-        <Card
-          p="16px"
-          overflowX={{ sm: "scroll", xl: "hidden" }}
-          bgGradient="linear(to-br, black, blue.800, black)"
-        >
+        <Card p="16px" overflowX={{ sm: "scroll", xl: "hidden" }} bg="#0F122D">
           <CardHeader p="12px 0px 28px 0px">
             <Flex direction="column">
               <Text fontSize="lg" color="#fff" fontWeight="bold" pb="8px">
-                Projects
+                Related Tweets
               </Text>
               <Flex align="center">
                 <Icon
@@ -705,28 +699,28 @@ export default function Dashboard() {
                   fontFamily="Plus Jakarta Display"
                   borderBottomColor="#56577A"
                 >
-                  Companies
+                  Twitter Accounts
                 </Th>
                 <Th
                   color="gray.400"
                   fontFamily="Plus Jakarta Display"
                   borderBottomColor="#56577A"
                 >
-                  Members
+                  Topics
                 </Th>
                 <Th
                   color="gray.400"
                   fontFamily="Plus Jakarta Display"
                   borderBottomColor="#56577A"
                 >
-                  Budget
+                  Keywords
                 </Th>
                 <Th
                   color="gray.400"
                   fontFamily="Plus Jakarta Display"
                   borderBottomColor="#56577A"
                 >
-                  Completion
+                  Tweets Made To This Audience
                 </Th>
               </Tr>
             </Thead>
@@ -747,11 +741,11 @@ export default function Dashboard() {
           </Table>
         </Card>
         {/* Orders Overview */}
-        <Card bgGradient="linear(to-br, black, blue.800, black)">
+        <Card bg="#0F122D">
           <CardHeader mb="32px">
             <Flex direction="column">
               <Text fontSize="lg" color="#fff" fontWeight="bold" mb="6px">
-                Orders overview
+                Your Related Accounts
               </Text>
               <Flex align="center">
                 <Icon
@@ -761,17 +755,17 @@ export default function Dashboard() {
                   h="15px"
                   me="5px"
                 />
-                <Text fontSize="sm" color="gray.400" fontWeight="normal">
+                {/* <Text fontSize="sm" color="gray.400" fontWeight="normal">
                   <Text fontWeight="bold" as="span" color="gray.400">
                     +30%
                   </Text>{" "}
                   this month
-                </Text>
+                </Text> */}
               </Flex>
             </Flex>
           </CardHeader>
           <CardBody>
-            <Flex direction="column" lineHeight="21px">
+            {/* <Flex direction="column" lineHeight="21px">
               {timelineData.map((row, index, arr) => {
                 return (
                   <TimelineRow
@@ -784,7 +778,7 @@ export default function Dashboard() {
                   />
                 );
               })}
-            </Flex>
+            </Flex> */}
           </CardBody>
         </Card>
       </Grid>

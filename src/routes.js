@@ -53,8 +53,8 @@ var dashRoutes = [
     layout: "/admin",
   },
   {
-    path: "/tables",
-    name: "Drafts",
+    path: "/create",
+    name: "Create",
     rtlName: "لوحة القيادة",
     icon: <RocketIcon color="inherit" />,
     component: Tables,
