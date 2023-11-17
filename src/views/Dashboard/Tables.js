@@ -52,7 +52,7 @@ function Tables() {
       <Card overflowX={{ sm: "scroll", xl: "hidden" }} pb="0px">
         <CardHeader p="6px 0px 22px 0px">
           <Text fontSize="lg" color="#fff" fontWeight="bold">
-            Followers Table
+            CRM
           </Text>
         </CardHeader>
         <CardBody>
@@ -88,7 +88,7 @@ function Tables() {
                 >
                   Employed
                 </Th>
-                <Th borderBottomColor="#56577A"></Th>
+                <Th borderBottomColor="#56577A">Auto-DM</Th>
               </Tr>
             </Thead>
             <Tbody>
@@ -115,22 +115,22 @@ function Tables() {
         <CardHeader p="6px 0px 22px 0px">
           <Flex direction="column">
             <Text fontSize="lg" color="#fff" fontWeight="bold" mb=".5rem">
-              Projects Table
+              Content Curation Table
             </Text>
             <Flex align="center">
-              <Icon
+              {/* <Icon
                 as={AiFillCheckCircle}
                 color="green.500"
                 w="15px"
                 h="15px"
                 me="5px"
-              />
-              <Text fontSize="sm" color="gray.400" fontWeight="normal">
+              /> */}
+              {/* <Text fontSize="sm" color="gray.400" fontWeight="normal">
                 <Text fontWeight="bold" as="span" color="gray.400">
                   +30%
                 </Text>{" "}
                 this month
-              </Text>
+              </Text> */}
             </Flex>
           </Flex>
         </CardHeader>
@@ -144,29 +144,27 @@ function Tables() {
                   fontFamily="Plus Jakarta Display"
                   borderBottomColor="#56577A"
                 >
-                  Companies
+                  Related Accounts
                 </Th>
                 <Th
                   color="gray.400"
                   fontFamily="Plus Jakarta Display"
                   borderBottomColor="#56577A"
                 >
-                  Budget
+                  Topics
                 </Th>
                 <Th
                   color="gray.400"
                   fontFamily="Plus Jakarta Display"
                   borderBottomColor="#56577A"
                 >
-                  Status
+                  Keywords
                 </Th>
                 <Th
                   color="gray.400"
                   fontFamily="Plus Jakarta Display"
                   borderBottomColor="#56577A"
-                >
-                  Completion
-                </Th>
+                ></Th>
                 <Th borderBottomColor="#56577A"></Th>
               </Tr>
             </Thead>
