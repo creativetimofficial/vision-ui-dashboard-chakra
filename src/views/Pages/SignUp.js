@@ -1,6 +1,5 @@
-import React from "react";
-
-// Chakra imports
+import React, { useState } from "react";
+import axios from "axios";
 import {
   Box,
   Flex,
@@ -15,19 +14,42 @@ import {
   Icon,
   DarkMode,
 } from "@chakra-ui/react";
-
-// Icons
 import { FaApple, FaFacebook, FaGoogle } from "react-icons/fa";
-// Custom Components
+import { useHistory } from "react-router-dom";
 import AuthFooter from "components/Footer/AuthFooter";
 import GradientBorder from "components/GradientBorder/GradientBorder";
-
-// Assets
 import TradingCollectiveLogoBlk from "assets/img/TradingCollectiveLogoBlk.png";
 
 function SignUp() {
   const titleColor = "white";
   const textColor = "gray.400";
+  let history = useHistory();
+
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
+  const route = process.env.REACT_APP_API_URL;
+
+  const handleSignInClick = () => {
+    history.push("/auth/signin");
+  };
+  const handleSignUp = async (e) => {
+    e.preventDefault();
+    try {
+      const response = await axios.post(`${route}/auth/signup`, {
+        name,
+        email,
+        password,
+      });
+      handleSignInClick();
+      console.log('Signup response:', response.data);
+    } catch (error) {
+    console.error('Error signing up:', error.response ? error.response.data : error.message);
+    }
+  };
+
+
 
   return (
     <Flex position="relative" overflow={{ lg: "hidden" }}>
@@ -43,7 +65,6 @@ function SignUp() {
         flexDirection="column"
         h={{ sm: "initial", md: "unset" }}
         w={{ base: "90%" }}
-        // maxW='1044px'
         marginTop="50px"
         mx="auto"
         justifyContent="space-between"
@@ -65,7 +86,7 @@ function SignUp() {
             textAlign="center"
             justifyContent="center"
             align="center"
-            mt={{ base: "45px", md: "45px", lg: "45px" }}
+            mt={{ base: "7px", md: "7px", lg: "7px" }}
             mb="20px"
           >
             <Text
@@ -189,125 +210,132 @@ function SignUp() {
               >
                 or
               </Text>
-              <FormControl>
-                <FormLabel
-                  color={titleColor}
-                  ms="4px"
-                  fontSize="sm"
-                  fontWeight="normal"
-                >
-                  Name
-                </FormLabel>
-
-                <GradientBorder
-                  mb="24px"
-                  h="50px"
-                  w={{ base: "100%", lg: "fit-content" }}
-                  borderRadius="20px"
-                >
-                  <Input
-                    color={titleColor}
-                    bg={{
-                      base: "rgb(19,21,54)",
-                    }}
-                    border="transparent"
-                    borderRadius="20px"
-                    fontSize="sm"
-                    size="lg"
-                    w={{ base: "100%", md: "346px" }}
-                    maxW="100%"
-                    h="46px"
-                    type="text"
-                    placeholder="Your name"
-                  />
-                </GradientBorder>
-                <FormLabel
-                  color={titleColor}
-                  ms="4px"
-                  fontSize="sm"
-                  fontWeight="normal"
-                >
-                  Email
-                </FormLabel>
-                <GradientBorder
-                  mb="24px"
-                  h="50px"
-                  w={{ base: "100%", lg: "fit-content" }}
-                  borderRadius="20px"
-                >
-                  <Input
-                    color={titleColor}
-                    bg={{
-                      base: "rgb(19,21,54)",
-                    }}
-                    border="transparent"
-                    borderRadius="20px"
-                    fontSize="sm"
-                    size="lg"
-                    w={{ base: "100%", md: "346px" }}
-                    maxW="100%"
-                    h="46px"
-                    type="email"
-                    placeholder="Your email address"
-                  />
-                </GradientBorder>
-                <FormLabel
-                  color={titleColor}
-                  ms="4px"
-                  fontSize="sm"
-                  fontWeight="normal"
-                >
-                  Password
-                </FormLabel>
-                <GradientBorder
-                  mb="24px"
-                  h="50px"
-                  w={{ base: "100%", lg: "fit-content" }}
-                  borderRadius="20px"
-                >
-                  <Input
-                    color={titleColor}
-                    bg={{
-                      base: "rgb(19,21,54)",
-                    }}
-                    border="transparent"
-                    borderRadius="20px"
-                    fontSize="sm"
-                    size="lg"
-                    w={{ base: "100%", md: "346px" }}
-                    maxW="100%"
-                    h="46px"
-                    type="password"
-                    placeholder="Your password"
-                  />
-                </GradientBorder>
-                <FormControl display="flex" alignItems="center" mb="24px">
-                  <DarkMode>
-                    <Switch id="remember-login" colorScheme="brand" me="10px" />
-                  </DarkMode>
-
+              <form onSubmit={handleSignUp}>
+                <FormControl>
                   <FormLabel
                     color={titleColor}
-                    htmlFor="remember-login"
-                    mb="0"
+                    ms="4px"
+                    fontSize="sm"
                     fontWeight="normal"
                   >
-                    Remember me
+                    Name
                   </FormLabel>
+                  <GradientBorder
+                    mb="24px"
+                    h="50px"
+                    w={{ base: "100%", lg: "fit-content" }}
+                    borderRadius="20px"
+                  >
+                    <Input
+                      color={titleColor}
+                      bg={{
+                        base: "rgb(19,21,54)",
+                      }}
+                      border="transparent"
+                      borderRadius="20px"
+                      fontSize="sm"
+                      size="lg"
+                      w={{ base: "100%", md: "346px" }}
+                      maxW="100%"
+                      h="46px"
+                      type="text"
+                      placeholder="Your name"
+                      value={name}
+                      onChange={(e) => setName(e.target.value)}
+                    />
+                  </GradientBorder>
+                  <FormLabel
+                    color={titleColor}
+                    ms="4px"
+                    fontSize="sm"
+                    fontWeight="normal"
+                  >
+                    Email
+                  </FormLabel>
+                  <GradientBorder
+                    mb="24px"
+                    h="50px"
+                    w={{ base: "100%", lg: "fit-content" }}
+                    borderRadius="20px"
+                  >
+                    <Input
+                      color={titleColor}
+                      bg={{
+                        base: "rgb(19,21,54)",
+                      }}
+                      border="transparent"
+                      borderRadius="20px"
+                      fontSize="sm"
+                      size="lg"
+                      w={{ base: "100%", md: "346px" }}
+                      maxW="100%"
+                      h="46px"
+                      type="email"
+                      placeholder="Your email address"
+                      value={email}
+                      onChange={(e) => setEmail(e.target.value)}
+                    />
+                  </GradientBorder>
+                  <FormLabel
+                    color={titleColor}
+                    ms="4px"
+                    fontSize="sm"
+                    fontWeight="normal"
+                  >
+                    Password
+                  </FormLabel>
+                  <GradientBorder
+                    mb="24px"
+                    h="50px"
+                    w={{ base: "100%", lg: "fit-content" }}
+                    borderRadius="20px"
+                  >
+                    <Input
+                      color={titleColor}
+                      bg={{
+                        base: "rgb(19,21,54)",
+                      }}
+                      border="transparent"
+                      borderRadius="20px"
+                      fontSize="sm"
+                      size="lg"
+                      w={{ base: "100%", md: "346px" }}
+                      maxW="100%"
+                      h="46px"
+                      type="password"
+                      placeholder="Your password"
+                      value={password}
+                      onChange={(e) => setPassword(e.target.value)}
+                    />
+                  </GradientBorder>
+                  <FormControl display="flex" alignItems="center" mb="24px">
+                    <DarkMode>
+                      <Switch id="remember-login" colorScheme="brand" me="10px" />
+                    </DarkMode>
+
+                    <FormLabel
+                      color={titleColor}
+                      htmlFor="remember-login"
+                      mb="0"
+                      fontWeight="normal"
+                    >
+                      Remember me
+                    </FormLabel>
+                  </FormControl>
+                  <Button
+                    variant="brand"
+                    fontSize="10px"
+                    type="submit"
+                    w="100%"
+                    maxW="350px"
+                    h="45"
+                    mb="20px"
+                    mt="20px"
+                  >
+                    SIGN UP
+                  </Button>
                 </FormControl>
-                <Button
-                  variant="brand"
-                  fontSize="10px"
-                  type="submit"
-                  w="100%"
-                  maxW="350px"
-                  h="45"
-                  mb="20px"
-                  mt="20px"
-                >
-                  SIGN UP
-                </Button>
-              </FormControl>
+              </form>
               <Flex
                 flexDirection="column"
                 justifyContent="center"
@@ -323,6 +351,7 @@ function SignUp() {
                     ms="5px"
                     href="#"
                     fontWeight="bold"
+                    onClick={handleSignInClick}
                   >
                     Sign In
                   </Link>
@@ -345,7 +374,7 @@ function SignUp() {
           <Box
             bgImage={TradingCollectiveLogoBlk}
             w="100%"
-            h="1000px"
+            h="845px"
             bgSize="cover"
             bgPosition="50%"
             position="absolute"
@@ -354,7 +383,7 @@ function SignUp() {
             justifyContent="center"
             alignItems="center"
             position="absolute"
-          ></Box>
+          />
         </Box>
       </Flex>
     </Flex>
