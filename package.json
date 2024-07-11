@@ -2,6 +2,7 @@
   "name": "vision-dashboard-chakra",
   "version": "1.0.1",
   "private": true,
+  "homepage": "https://demos.creative-tim.com/vision-ui-dashboard-chakra/#/",
   "dependencies": {
     "@chakra-ui/icons": "^1.1.5",
     "@chakra-ui/react": "1.8.8",
@@ -41,7 +42,7 @@
   "target": "web",
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && gulp licenses",
+    "build": "cross-env PUBLIC_URL=/ react-scripts build && gulp licenses",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build",
@@ -59,7 +60,8 @@
     "eslint-plugin-prettier": "3.4.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "cross-env": "^7.0.3"
   },
   "browserslist": {
     "production": [
