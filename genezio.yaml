@@ -1,4 +1,4 @@
-name: vision-ui-dashboard-chakra-2
+name: vision-ui-dashboard-chakra
 region: us-east-1
 yamlVersion: 2
 frontend:
@@ -8,4 +8,3 @@ frontend:
         deploy:
             - npm install --legacy-peer-deps
             - npm run build
-    subdomain: vision-ui-dashboard-chakra-2
