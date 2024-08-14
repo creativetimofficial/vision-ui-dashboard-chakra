@@ -11,6 +11,6 @@ frontend:
     # The command to build your frontend project. This is custom to your project.
     # It must to populate the specified `publish` folder with a `index.html` file.
     deploy:
-      - npm install
+      - npm install --legacy-peer-deps
       - npm run build
 yamlVersion: 2
