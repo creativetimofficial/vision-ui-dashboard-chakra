@@ -42,7 +42,7 @@
   "target": "web",
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env PUBLIC_URL=/ react-scripts build && gulp licenses",
+    "build": "cross-env PUBLIC_URL=/ cross-env CI=false react-scripts build && gulp licenses",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build",
