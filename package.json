@@ -14,6 +14,7 @@
     "@fontsource/open-sans": "^4.5.0",
     "@fontsource/raleway": "^4.5.0",
     "@fontsource/roboto": "^4.5.0",
+    "ajv": "^8.17.1",
     "apexcharts": "^3.27.3",
     "classnames": "2.3.1",
     "framer-motion": "^4.1.17",
@@ -42,7 +43,7 @@
   "target": "web",
   "scripts": {
     "start": "react-scripts start",
-    "build": "cross-env PUBLIC_URL=/ react-scripts build && gulp licenses",
+    "build": "cross-env PUBLIC_URL=/ cross-env CI=false react-scripts build && gulp licenses",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "npm run build",
@@ -51,17 +52,17 @@
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
   },
   "optionalDependencies": {
-    "@babel/core": "7.14.0",
+    "@babel/core": "7.16.12",
     "typescript": "4.2.4"
   },
   "devDependencies": {
     "@babel/plugin-transform-react-jsx-source": "^7.14.5",
+    "cross-env": "^7.0.3",
     "eslint-config-prettier": "8.3.0",
     "eslint-plugin-prettier": "3.4.0",
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.9",
-    "prettier": "2.2.1",
-    "cross-env": "^7.0.3"
+    "prettier": "2.2.1"
   },
   "browserslist": {
     "production": [
